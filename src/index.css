@@ -1,13 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* background-color: #E5E3C9; */
+  background-color: #e0e8ff;
+  font-family: 'Mulish', sans-serif;
+  background-image: url("pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (max-width: 375px){
+  body{
+      max-width: 375px;
+      margin: 30px auto;
+      background-image: url("pattern-background-mobile.svg");
+  }
 }

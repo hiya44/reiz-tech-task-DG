@@ -1,38 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;700&display=swap');
 .App {
-  text-align: center;
+  max-width: 1440px;
+  margin: 50px auto;
+}
+p {
+  margin: 3px;
+}
+h1{
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-size: 36px;
+}
+select{
+  font-family: 'Mulish', sans-serif;
+  font-weight: 300;
+}
+.heading-div{
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  margin-left: 2px;
+}
+.heading-div:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.heading-text{
+  font-weight: 300;
+  color: hsl(223, 47%, 23%);
+}
+.flag{
+  padding: 5px 0px;
+  margin: 55px 0px 0px;
+  /* width: 50%; */
+}
+.svg-icon {
+  width: 16px;
+  height: 16px;
+}
+.asc-svg{
+  transform: rotate(90deg);
+}
+.desc-svg{
+  transform: rotate(-90deg);
+}
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sortButtonDiv {
+  margin: 5px;
+  margin-bottom: 15px;  
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sortButton{
+  margin-right: 10px;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
+  width: 75px;
+  background-color: hsl(245, 75%, 52%);
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.sortButton:hover{
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.sortButton:active{
+  cursor: pointer;
+  transform: translateY(2px);
+}
+.filter{
+  float: right;
+  margin-right: 5px;
+  width: 175px;
+}
+.country{
+  background-color: #B4CFB0;
+  margin: 5px;
+  list-style-type: none;
+  font-weight: 300;
+}
+.cards {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
-.App-link {
-  color: #61dafb;
+.card {
+  flex: 0 1 24%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: hsl(225, 100%, 98%);
+  list-style-type: none;
+  font-weight: 300;
+  text-align: center;
+  border-radius: 8px 8px 5px 5px;
+  height: 300px;
+  color: hsl(224, 23%, 55%);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.countryData{
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  font-size: 20px;
+}
+.cardText {
+  margin-top: 5px;
+}
+@media screen and (min-width: 40em) {
+  .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
   }
-  to {
-    transform: rotate(360deg);
+
+  .card {
+      flex: 0 1 calc(50% - 1em);
+  }
+}
+
+@media screen and (min-width: 60em) {
+
+  .card {
+      flex: 0 1 calc(25% - 1em);
+  }
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 0 500px;
+  box-sizing: border-box;
+  margin: 1rem .25em;
+}
+
+@media screen and (min-width: 40em) {
+  .card {
+     max-width: calc(50% -  1em);
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .card {
+      max-width: calc(25% - 1em);
+  }
+}
+
+@media screen and (min-width: 52em) {
+  .centered {
+      max-width: 1440px;
   }
 }
